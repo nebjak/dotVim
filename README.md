@@ -25,6 +25,10 @@ based on [vim-plug][vim-plug_link] minimalist Vim plugin manager
 * [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
 * [godlygeek/tabular](https://github.com/godlygeek/tabular)
 * [plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown)
+* [wincent/command-t](https://github.com/wincent/command-t)
+* [nebjak/snipmate.vim](https://github.com/nebjak/snipmate.vim)
+* [fatih/vim-go](https://github.com/fatih/vim-go)
+* [bling/vim-bufferline](https://github.com/bling/vim-bufferline)
 
 
 

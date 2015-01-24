@@ -9,6 +9,10 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'pangloss/vim-javascript'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': ['markdown', 'md'] }
+Plug 'wincent/command-t'
+Plug 'nebjak/snipmate.vim'
+Plug 'fatih/vim-go', { 'for': ['go'] }
+Plug 'bling/vim-bufferline'
 call plug#end()
 
 " mapleader and shortcuts
