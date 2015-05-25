@@ -1,6 +1,6 @@
 call plug#begin()
+
 Plug 'tpope/vim-sensible'
-Plug 'altercation/vim-colors-solarized'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'stephpy/vim-yaml', { 'for': ['yaml', 'yml'] }
@@ -13,6 +13,15 @@ Plug 'wincent/command-t'
 Plug 'nebjak/snipmate.vim'
 Plug 'fatih/vim-go', { 'for': ['go'] }
 Plug 'bling/vim-bufferline'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'Raimondi/delimitMate'
+
+" themes
+Plug 'tpope/vim-vividchalk'
+Plug 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
+
 call plug#end()
 
 " mapleader and shortcuts
@@ -43,11 +52,12 @@ set magic
 set background=dark
 
 " Theme
-if has('gui_running')
-  colorscheme solarized
-else
-  colorscheme Tomorrow-Night
-endif
+"if has('gui_running')
+"  colorscheme solarized
+"else
+"  colorscheme Tomorrow-Night
+"endif
+colorscheme Tomorrow-Night
 
 " Use spaces instead of tabs
 set expandtab
@@ -76,3 +86,16 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" Airline conf
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
