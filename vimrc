@@ -67,6 +67,8 @@ set shiftwidth=2
 set tabstop=2
 
 " Show list
+scriptencoding utf-8
+set encoding=utf-8
 set list
 set listchars=tab:▸\ ,eol:¬
 
@@ -74,7 +76,8 @@ set listchars=tab:▸\ ,eol:¬
 set number
 
 " GVim font
-set gfn=Monaco\ 10.5
+"set gfn=Monaco\ 10.5
+set gfn=Monaco\ for\ Powerline\ 10.5
 
 " Disable arrow keys
 map <up> <nop>
@@ -92,10 +95,10 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
