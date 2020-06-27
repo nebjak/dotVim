@@ -15,21 +15,15 @@ based on [vim-plug][vim-plug_link] minimalist Vim plugin manager
 3. Run Vim and `:PlugInstall` to install plugins.
 
 ## Plugins
-* [tpope/vim-sensible](https://github.com/tpope/vim-sensible)
-* [altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+* [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim)
+* [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
+* [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 * [jeffkreeftmeijer/vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
-* [elzr/vim-json](https://github.com/elzr/vim-json)
-* [stephpy/vim-yaml](https://github.com/stephpy/vim-yaml)
-* [othree/html5.vim](https://github.com/othree/html5.vim)
-* [kchmck/vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
-* [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
-* [godlygeek/tabular](https://github.com/godlygeek/tabular)
-* [plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown)
-* [wincent/command-t](https://github.com/wincent/command-t)
-* [nebjak/snipmate.vim](https://github.com/nebjak/snipmate.vim)
-* [fatih/vim-go](https://github.com/fatih/vim-go)
-* [bling/vim-bufferline](https://github.com/bling/vim-bufferline)
-
+* [jelera/vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax)
+* [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
+* [HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim)
+* [prettier/vim-prettier](https://github.com/prettier/vim-prettier)
+* [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 
 
 [vim-plug_link]: https://github.com/junegunn/vim-plug "Minimalist Vim Plugin Manager"
