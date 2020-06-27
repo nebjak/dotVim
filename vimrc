@@ -2,7 +2,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'tpope/vim-fugitive'
 
 " javascript
 Plug 'jelera/vim-javascript-syntax'
@@ -223,6 +225,8 @@ set tabstop=2
 " Show list
 scriptencoding utf-8
 set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
 set list
 set listchars=tab:▸\ ,eol:¬
 
@@ -230,8 +234,9 @@ set listchars=tab:▸\ ,eol:¬
 set number
 
 " GVim font
-"set gfn=Monaco\ 10.5
-set gfn=Monaco\ for\ Powerline\ 10.5
+if has('gui_running')
+    set guifont=Monaco\ for\ Powerline\ 12
+endif
 
 " Disable arrow keys
 map <up> <nop>
@@ -245,10 +250,18 @@ imap <left> <nop>
 imap <right> <nop>
 
 " Airline conf
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_skip_empty_sections = 1
+
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
+" powerline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -257,11 +270,13 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
 
 " jsdoc syntax highlight
 let g:javascript_plugin_jsdoc = 1
 
 " prettier settings
 let g:prettier#autoformat_config_present = 1
+nmap <Leader>f <Plug>(Prettier)
 
