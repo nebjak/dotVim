@@ -8,6 +8,7 @@ Plug 'tpope/vim-fugitive'
 
 " javascript
 Plug 'jelera/vim-javascript-syntax'
+Plug 'dense-analysis/ale'
 
 " typescript
 Plug 'leafgarland/typescript-vim'
@@ -280,4 +281,7 @@ let g:javascript_plugin_jsdoc = 1
 " prettier settings
 let g:prettier#autoformat_config_present = 1
 nmap <Leader>f <Plug>(Prettier)
+
+" Fix files with prettier, and then ESLint.
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 
