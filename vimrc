@@ -213,7 +213,8 @@ set background=dark
 "else
 "  colorscheme Tomorrow-Night
 "endif
-colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night-Bright
+colorscheme codedark
 
 " Use spaces instead of tabs
 set expandtab
