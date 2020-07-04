@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " NerdTree
 Plug 'preservim/nerdtree'
@@ -292,4 +293,8 @@ let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeIgnore = ['^node_modules$']
+
+" CtrlP
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = 'node_modules\|git\|\*.swp'
 
