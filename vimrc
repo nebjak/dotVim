@@ -5,6 +5,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
+
+" NerdTree
+Plug 'preservim/nerdtree'
 
 " javascript
 Plug 'jelera/vim-javascript-syntax'
@@ -284,4 +288,8 @@ nmap <Leader>f <Plug>(Prettier)
 
 " Fix files with prettier, and then ESLint.
 let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeIgnore = ['^node_modules$']
 
