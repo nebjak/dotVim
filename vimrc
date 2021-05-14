@@ -218,6 +218,9 @@ set incsearch
 " For expressions turn magic on
 set magic
 
+" Enable spell check by default
+set spell spelllang=en_us
+
 " Color scheme
 set background=dark
 
@@ -258,11 +261,6 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
 
 " Airline conf
 let g:airline_theme = 'powerlineish'
